@@ -1,0 +1,16 @@
+{
+  "extends": "react-app",
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "semi": ["error", "never"],
+    "sort-imports": 
+    [
+      "error", 
+      { 
+        "ignoreCase": true, 
+        "ignoreDeclarationSort": true 
+      }
+    ], 
+}
+}
