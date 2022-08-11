@@ -1,0 +1,32 @@
+<html>
+    <head></head>
+    <body>
+        <ul id="todo-app">
+            <li class="item">Walk the dog</li>
+            <li class="item">Pay bills</li>
+            <li class="item">Make dinner</li>
+            <li class="item">Code for one hour</li>
+        </ul>
+
+        <script type="text/javascript">
+          /*
+            Since creating a huge amount of items in the DOM will be a big performance issue,
+            so we need to use "lazy" lists. Libraries like "react-infinite-scroll-component" or "vue-virtual-scroll-list" will help us to resolve this problem.
+
+            What is actually do this libraries? They're rendering only a small amount of items
+            filling the entire scroll space (overflow), so user will not see any differences with real huge list, except for performance.
+          */
+            document.addEventListener('DOMContentLoaded', function () {
+
+                let app = document.getElementById('todo-app');
+                let items = app.getElementsByClassName('item');
+
+                for (let item of items) {
+                    item.addEventListener('click', function () {
+                        alert('you clicked on item: ' + item.innerHTML);
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>
