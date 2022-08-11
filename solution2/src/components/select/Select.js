@@ -1,3 +1,5 @@
+import classes from "./Select.module.scss"
+
 export const Select = (props) => {
   const renderOptions = () => {
     return props.options.map((x) => (
@@ -7,7 +9,10 @@ export const Select = (props) => {
     ))
   }
   return (
-    <select onChange={(el) => props.onChange(el.target.value)}>
+    <select
+      className={classes.select}
+      onChange={(el) => props.onChange(el.target.value)}
+    >
       {renderOptions()}
     </select>
   )

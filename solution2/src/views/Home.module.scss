@@ -4,7 +4,11 @@
 }
 
 .sort {
-  margin-bottom: 20px;
+  margin: 20px 0;
+
+  > span {
+    margin-right: 10px;
+  }
 }
 
 .lists {

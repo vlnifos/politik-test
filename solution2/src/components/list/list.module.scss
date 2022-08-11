@@ -1,5 +1,7 @@
 .list {
-  margin: 0 20px;
+  > :nth-child(2n) {
+    background: #5fa8d3;
+  }
 }
 
 .title {
@@ -8,6 +10,8 @@
 
 .item {
   padding: 10px;
+
+  background: #bee9e8;
 
   &:hover {
     opacity: 0.7;
