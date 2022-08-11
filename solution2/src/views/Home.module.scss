@@ -1,0 +1,18 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sort {
+  margin-bottom: 20px;
+}
+
+.lists {
+  display: flex;
+  justify-content: space-between;
+
+  flex: 1;
+  > * {
+    width: 30%;
+  }
+}

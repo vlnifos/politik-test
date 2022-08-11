@@ -5,6 +5,12 @@ const getEnrichedProp = (type, item) => {
     [entityType.councillors]: {
       name: `${item.firstName} ${item.lastName}`,
     },
+    [entityType.affairs]: {
+      date: `${item.updated}`,
+    },
+    [entityType.councils]: {
+      name: `${item.name}`,
+    },
   }
 
   return prop[type]

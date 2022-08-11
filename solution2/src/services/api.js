@@ -2,6 +2,8 @@ const proxyUrl = "https://cors-anywhere.herokuapp.com/"
 
 const urls = {
   councillors: "http://ws-old.parlament.ch/councillors?format=json",
+  affairs: "http://ws-old.parlament.ch/affairs?format=json",
+  councils: "http://ws-old.parlament.ch/councils?format=json",
 }
 
 export const api = {
